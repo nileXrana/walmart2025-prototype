@@ -74,7 +74,7 @@ export default function GamificationPage() {
         </div>
         {/* Rewards */}
         <div className="bg-blue-50/100 rounded-2xl p-6 mt-4 shadow-inner animate-fadein4">
-          <h3 className="font-semibold mb-3 text-blue-700 text-xl">League Rewards</h3>
+          <h3 className="font-semibold mb-3 text-blue-700 text-xl">League Reward</h3>
           <ul className="text-left flex flex-col gap-2">
             {leagues.map((league) => (
               <li key={league.name} className="flex items-center gap-3 text-black">
