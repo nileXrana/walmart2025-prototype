@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import { useUser } from '@/context/UserContext';
 import { useRouter } from 'next/navigation';
+import Image from "next/image";
 
 // Local trophy images for each league
 const leagues = [
@@ -49,7 +50,7 @@ export default function GamificationPage() {
         {/* Trophy for current league */}
         <div className="flex flex-col items-center mb-8 animate-fadein2">
           <div className="relative">
-            <img src={currentLeague.trophy} alt="Trophy" width={100} height={100} className="drop-shadow-2xl scale-110 animate-trophy-glow" />
+            <Image src={currentLeague.trophy} alt="Trophy" width={100} height={100} className="drop-shadow-2xl scale-110 animate-trophy-glow" />
             <span className={`scale-115 absolute -bottom-4 left-1/2 -translate-x-1/2 px-6 py-2 rounded-full text-white text-sm font-bold bg-gradient-to-r ${currentLeague.color} shadow-lg border-2 border-white/60`}>{currentLeague.name} League</span>
           </div>
           <div className="text-4xl font-extrabold text-yellow-400 drop-shadow mt-6 ">{walCoins}</div>
@@ -63,7 +64,7 @@ export default function GamificationPage() {
               className={`flex flex-col h-[140px] items-center p-5 rounded-3xl shadow-xl bg-gradient-to-br ${league.color} transition-transform transform hover:scale-110 hover:shadow-2xl border-4 ${walCoins >= league.min ? 'border-yellow-400' : 'border-transparent'} relative animate-fadein3`}
               style={{ minWidth: 100, }}
             >
-              <img src={league.trophy} alt="Trophy" width={56} height={56} className="mb-2 drop-shadow-lg animate-trophy-glow" />
+              <Image src={league.trophy} alt="Trophy" width={56} height={56} className="mb-2 drop-shadow-lg animate-trophy-glow" />
               <span className="font-bold text-lg text-white drop-shadow">{league.name}</span>
               <span className="text-xs text-white/80">{league.min}+</span>
               {walCoins >= league.min && (
@@ -78,7 +79,7 @@ export default function GamificationPage() {
           <ul className="text-left flex flex-col gap-2">
             {leagues.map((league) => (
               <li key={league.name} className="flex items-center gap-3 text-black">
-                <img src={league.trophy} alt="Trophy" width={32} height={32} className="animate-trophy-glow" />
+                <Image src={league.trophy} alt="Trophy" width={32} height={32} className="animate-trophy-glow" />
                 <span className={`font-bold text-black px-3 py-1 rounded-lg shadow ${walCoins >= league.min ? 'bg-gradient-to-r from-yellow-400 to-yellow-600' : 'bg-gray-400'}`}>{league.name}</span>: {league.reward}
               </li>
             ))}

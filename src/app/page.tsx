@@ -60,7 +60,7 @@ export default function Home() {
             Scan Your Product Barcode
           </span>
           <div className="mt-7">
-          <img src="/barcode.png" alt="Barcode" width={80} height={80} className="mt-4 drop-shadow-xl animate-bounce-slow" />
+            <Image src="/barcode.png" alt="Barcode" width={80} height={80} className="mt-4 drop-shadow-xl animate-bounce-slow" />
           </div>
         </div>
         {/* Simulated scan button (redirects to review page) */}

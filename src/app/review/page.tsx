@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { useUser } from '@/context/UserContext';
 import { useRouter } from 'next/navigation';
+import Image from "next/image";
 
 // Dummy product data
 const product = {
@@ -43,7 +44,7 @@ export default function ReviewPage() {
         <h1 className="text-2xl font-bold text-blue-700 mb-4 text-center">Review Your Purchase</h1>
         {/* Product info */}
         <div className="flex items-center mb-6">
-          <img src={product.image} alt={product.name} className="w-20 h-20 rounded mr-4" />
+          <Image src={product.image} alt={product.name} width={80} height={80} className="w-20 h-20 rounded mr-4" unoptimized />
           <div>
             <div className="font-semibold text-lg">{product.name}</div>
             <div className="text-gray-500 text-sm">Barcode: {product.barcode}</div>

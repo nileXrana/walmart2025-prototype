@@ -13,7 +13,6 @@ import {
   Tooltip,
   Legend,
   ReferenceDot,
-  LabelList,
 } from 'recharts';
 
 // Generate dummy data for 55 products with sales
