@@ -27,7 +27,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
+    <div className=" min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
       {/* Animated gradient background */}
       <div className="absolute inset-0 -z-10 animate-gradient bg-gradient-to-br from-blue-400 via-yellow-200 to-blue-100 opacity-90" />
       {/* Floating sparkles */}
@@ -70,7 +70,7 @@ export default function Home() {
             Scan Now
           </button>
         </Link>
-        <p className="text-gray-500 mt-7 text-sm animate-fadein4">(Prototype: Click to simulate scanning)</p>
+        <p className="text-gray-500 mt-7 font-bold text-md animate-fadein4">(Prototype: Click to simulate scanning)</p>
       </div>
       {/* Or sign in directly */}
       <div className="flex flex-col items-center animate-fadein3 mb-5">
