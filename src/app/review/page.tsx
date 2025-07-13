@@ -6,7 +6,7 @@ import Image from "next/image";
 
 // Dummy product data
 const product = {
-  name: 'Walmart Milk 1L',
+  name: 'WalStore Milk 1L',
   barcode: '1234567890',
 };
 

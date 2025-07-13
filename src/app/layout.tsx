@@ -21,7 +21,7 @@ function Header() {
     <header className="w-full bg-gradient-to-r from-blue-800 via-blue-600 to-blue-400 text-white py-4 px-6 flex items-center justify-between shadow-2xl border-b-4 border-yellow-300/60 z-20 relative">
       <div className="flex items-center gap-3">
         <Link href="/">
-          <span className="font-extrabold text-2xl tracking-wide drop-shadow-lg cursor-pointer hover:scale-105 transition-transform">Walmart</span>
+          <span className="font-extrabold text-2xl tracking-wide drop-shadow-lg cursor-pointer hover:scale-105 transition-transform">WalStore</span>
         </Link>
         <nav className="ml-8 flex gap-4 text-base">
           <Link href="/products" className="px-4 py-2 rounded-xl bg-white/10 hover:bg-yellow-300/80 hover:text-blue-900 shadow-md transition-all duration-200 cursor-pointer hover:scale-110 border border-transparent hover:border-yellow-400">Products</Link>

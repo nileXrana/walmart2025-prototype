@@ -49,7 +49,7 @@ export default function Home() {
       {/* Walmart logo and title */}
       <div className="mb-8 mt-8 flex flex-col items-center animate-fadein">
         <Image src="/trophies/trophy.png" alt="Walmart Logo" width={90} height={90} className="drop-shadow-2xl animate-trophy-glow" />
-        <h1 className="text-4xl font-extrabold text-blue-700 mt-4 text-center drop-shadow animate-fadein2">Welcome to Walmart Feedback Portal</h1>
+        <h1 className="text-4xl font-extrabold text-blue-700 mt-4 text-center drop-shadow animate-fadein2">Welcome to WalStore Feedback Portal</h1>
         <p className="text-lg text-gray-700 mt-2 text-center animate-fadein3">Share your experience and earn WalCoins!</p>
       </div>
       {/* Scan barcode option */}
